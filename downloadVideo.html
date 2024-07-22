@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Capios - OCR, Screenshot & Video capture tool</title>
+    <link rel="stylesheet" type="text/css" href="/css/spectrum.css">
+    <link rel="stylesheet" type="text/css" href="/css/downloadVideo.css">
+    <link rel="stylesheet" type="text/css" href="/css/helpers.css">
+</head>
+<body>
+    <div id="video-download-wrapper">
+        <div id="video-download-inner">
+            <div id="video-download-top">
+                <div id="video-download-logo">
+                    <img class="copyright-logo-icon" src="/images/OCR_icons/capios-logo-white.png">
+                    <!-- <span class="quix-logo-main-title">ScreenGenius</span> -->
+                </div>
+                <div id="video-download-nav">
+                    <!-- <div class="video-download-nav-item label-watermark" title="Watermark">
+                        <img src="/images/OCR_icons/watermark.png" alt=""/>
+                        <span>Watermark</span> 
+                    </div> -->
+                    <div class="video-download-nav-item label-url-summary" title="Coming Soon" style="opacity: 0.5;">
+                        <img src="images/share-link.png" alt=""/>
+                        <span>URL Summary</span> 
+                    </div>
+                    <div class="video-download-nav-item user-dashboard" title="Go to Dashboard">
+                        <img src="images/quix-dashboard-icon.png" alt=""/>
+                        <span>Dashboard</span> 
+                    </div>
+                    <div class="video-download-nav-item user-edit-video" title="Edit video">
+                        <img src="images/quix-edit-icon.png" alt=""/>
+                        <span>Edit Video</span> 
+                    </div>
+                    <div class="video-download-nav-item video-download-local video-download-locally" title="Download">
+                        <img src="images/quix-download-icon.png" alt=""/>
+                        <span>Download</span>
+                        <div class="download-popup-outer" style="display: none;">
+                            <div class="share-popup-inner">
+                                <div class="share-row share-link label-download-webm label-download-video"><div class="download-col"><span>WebM</span></div></div>
+                                <div class="share-row share-email label-download-mp4 label-download-video"><div class="download-col"><span>MP4</span></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-download-nav-item video-share-local video-share-locally" title="Download">
+                        <img src="images/quix-share-icon.png" alt=""/>
+                        <span>Share</span>
+                        <div class="share-popup-outer" style="display: none;">
+                            <div class="share-popup-inner">
+                                <div class="share-row share-link label-share"><div class="download-col"><img class="download-col-img" src="/images/quix-link-green-icon.png"><span>Share Link</span></div></div>
+                                <div class="share-row share-email label-email"><div class="download-col"><img class="download-col-img" src="/images/quix-email-icon.png"><span>Share via Email</span></div></div>
+                                <!-- <div class="share-row share-social-media label-social-media"><div class="download-col"><img class="download-col-img" src="/images/quix-email-icon.png"><span>Share via Social Platforms</span></div></div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-download-nav-item upload-to-server" title="Upload to Cloud">
+                        <img src="images/quix-save-cloud-white.png" alt=""/>
+                        <span>Upload</span>
+                    </div>
+                    <div class="video-download-nav-item video-download-feedback" title="Feedback">
+                        <img src="images/quix-feedback-icon.png" alt=""/>
+                        <span>Feedback</span>
+                    </div>
+                    <div class="video-download-nav-item video-download-login-social loggedOut-item" title="Log In">
+                        <img src="images/quix-user-icon.png" alt=""/>
+                        <span>Log In</span>
+                    </div>
+                    <!-- <div class="video-download-nav-item video-download-login loggedOut-item" title="Log In with Gmail">
+                        <img src="images/google-icon.png" alt=""/>
+                        <span>Log In with Gmail</span>
+                    </div> -->
+                    <div class="video-download-nav-item video-download-logout loggedin-item" title="Log Out">
+                        <img src="images/quix-user-icon.png" alt=""/>
+                        <span>Log Out</span>
+                    </div>
+                </div>
+            </div>
+            <div id="video-download-content">
+                <div id="video-download-content-left">
+                    <div id="video-download-content-left-inner">
+                        <video controls autoplay></video>
+                    </div>
+                </div>
+                <div id="video-download-content-right">
+                    <div class="video-download-content-row video-download-details">
+                        <div class="video-row-inner">
+                            <label>Video Details</label>
+                            <div class="video-row-col video-duration"><span class="col-item-label">Duration:</span><span class="col-item-val recording-duration">04:46</span></div>
+                            <div class="video-row-col video-date"><span class="col-item-label">Date Captured:</span><span class="col-item-val recording-date">07.02.2023</span></div>
+                            <div class="video-row-col video-size"><span class="col-item-label">Size:</span><span class="col-item-val recording-size">365 KB</span></div>
+                        </div>
+                    </div>
+                    <div class="video-download-content-row video-download-save" title="Coming Soon">
+                        <div class="video-row-inner">
+                            <label>Save to Cloud</label>
+                            <div class="video-row-col includes-button ve-youtube"><div class="video-row-col-left"><img src="images/quix-youtube-icon.png"/><span>Youtube</span></div><div class="video-row-col-right"><button class="download-screen-button">Upload</button></div></div>
+                            <div class="video-row-col includes-button ve-google-drive"><div class="video-row-col-left"><img src="images/quix-google-drive-icon.png"/><span>Google Drive</span></div><div class="video-row-col-right"><button class="download-screen-button">Upload</button></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <div id="quix-signin-wrapper" class="quix-signin-wrapper">
+        <div id="quix-signin-overlay" class="quix-signin-overlay"></div>
+        <div id="quix-signin-inner">
+          <h3>Sign In to more..</h3>
+          <div class="quix-signin-row"><img alt="" src="images/quix-signin-folder.png"/><span>Fast Access to screenshots / videos</span></div>
+          <div class="quix-signin-row"><img alt="" src="images/quix-signin-gallery.png"/><span>Easily share Images / videos via link with anyone</span></div>
+          <div class="quix-signin-row"><img alt="" src="images/quix-signin-link.png"/><span>Using URL save all the screenshots together</span></div>
+          <div class="quix-signin-button-social"><span>Sign In</span></div>
+          <!-- <div class="quix-signin-button"><span>Sign In with Gmail</span></div> -->
+          <div class="quix-signin-close"><img alt="" src="images/quix-signin-close-circle.png"/></div>
+        </div>
+    </div>
+    <!-- <div id="quix-update-account-wrapper" class="quix-update-account-wrapper">
+        <div id="quix-update-account-overlay" class="quix-update-account-overlay"></div>
+        <div id="quix-update-account-inner">
+          <h3>Upgrade Account.</h3>
+          <div class="quix-signin-row"><img alt="" src="images/quix-signin-folder.png"/><span>Fast Access to screenshots / videos</span></div>
+          <div class="quix-signin-row"><img alt="" src="images/quix-signin-gallery.png"/><span>Easily share Images / videos via link with anyone</span></div>
+          <div class="quix-signin-row"><img alt="" src="images/quix-signin-link.png"/><span>Using URL save all the screenshots together</span></div>
+          <div class="quix-signin-button-social"><span>Upgrade</span></div>
+          <div class="quix-update-account-close"><img alt="" src="images/quix-signin-close-circle.png"/></div>
+        </div>
+    </div> -->
+
+    <div id="quix-update-account-wrapper" class="quix-update-account-wrapper">
+        <div id="quix-update-account-overlay" class="quix-update-account-overlay"></div>
+        <div id="quix-update-account-inner">
+          <div class="quix-signin-row"><img alt="" src="images/upgrade-banner.png"/></div>
+          <div class="quix-signin-row"><h3>Feature not available!</h3></div>
+          <div class="quix-signin-row"><span>This feature is not available for free users. Please upgrade to enjoy using it.</span></div>
+          <div class="quix-signin-button-social"><div><img alt="" src="images/premium-quality.png"/><div>Upgrade</div></div></div>
+          <div class="quix-update-account-close"><img alt="" src="images/quix-close-icon.png"/></div>
+          <div class="quix-settings-footer">
+            <div class="quix-settings-footer-inner">
+              <span>powered by</span>
+              <img src="images/quixy-logo-footer.png"/>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div id="quix-popup-loader">
+        <div class="quix-popup-loader-inner">
+          <div id="quix-popup-overlay" class="quix-popup-overlay"></div>
+          <img src="images/light-loader.gif" alt=""/>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/libs/misc/jquery.js"></script>
+    <script type="text/javascript" src="js/libs/misc/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/libs/misc/qrcode.min.js"></script>
+    <script type="text/javascript" src="js/helper.js"></script>
+    <script type="text/javascript" src="js/recording.js"></script>
+</body>
+</html>

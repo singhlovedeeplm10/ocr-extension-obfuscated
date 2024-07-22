@@ -1,0 +1,232 @@
+body{ cursor: auto;margin: 0px;padding: 0px; background: #000;}
+div#video-download-wrapper 
+{
+    float: left;
+    width: 100%;
+    color: #FFF;
+}
+div#video-download-top {
+    float: left;
+    width: 92%;
+    padding: 10px 4%;
+    z-index: 11;
+    position: relative;
+    background-color: #2F51B5;
+}
+div#video-download-logo {
+    float: left;
+}
+div#video-download-nav {
+    float: right;
+}
+#video-download-logo img {
+    /* width: 30px; */
+    width: 100px;
+    float: left;
+}
+#video-download-logo span {
+    float: left;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #FFFF;
+}
+.video-download-nav-item {
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    position: relative;
+}
+.video-download-nav-item img {
+    width: 20px;
+    float: left;
+}
+.video-download-nav-item span {
+    float: left;
+    padding: 2px 10px 0px 5px;
+    cursor: pointer;
+}
+div#video-download-content {
+    float: left;
+    width: 92%;
+    padding: 10px 4%;
+    background: #FFF;
+}
+#video-download-content-left-inner, #video-download-content-left-inner video
+{
+    float: left;
+    width: 100%;
+}
+div#video-download-content-left {
+    float: left;
+    width: 80%;
+    padding: 0.5%;
+    margin: 0 9.5%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+}
+div#video-download-content-right {
+    float: left;
+    width: 100%;
+    padding: 0 0% 0 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-download-content-row {
+    background: #2F51B5;
+    padding: 2%;
+    border-radius: 10px;
+    float: left;
+    width: 45.5%;
+}
+.video-download-save {
+    margin-left: 0.5%;
+    margin-top: 1%;
+    display: none;
+}
+.video-download-details {
+    margin-right: 0.5%;
+    margin-top: 1%;
+}
+.video-row-inner {
+    float: left;
+    width: 100%;
+}
+.video-row-inner > label {
+    font-size: 15px;
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.video-row-col {
+    margin-top: 5px;
+    float: left;
+    width: 33%;
+}
+span.col-item-label {
+    float: left;
+    padding-right: 10px;
+    font-size: 13px;
+}
+span.col-item-val {
+    float: left;
+    font-size: 13px;
+}
+.video-row-col.video-duration {
+    width: 30%;
+}
+.video-row-col.video-date {
+    width: 40%;
+}
+.video-row-col.video-size {
+    width: 30%;
+}
+.download-screen-button, .download-screen-link {
+    background: #FFFFFF;
+    border: none;
+    color: #2F51B5;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.video-download-signin .video-row-inner {
+    text-align: center;
+}
+.video-download-signin .video-row-inner button, .video-download-signin .video-row-inner a {
+    padding: 10px 30%;
+    margin: 15px 0px 5px 0px;
+}
+.download-screen-link {
+    display: inline-block;
+    text-decoration: none;
+}
+.video-row-col-left {
+    float: left;
+    width: 50%;
+    text-align: left;
+    font-size: 13px;
+}
+.video-row-col-right {
+    float: right;
+    width: 50%;
+    text-align: left;
+}
+.video-row-col-right span.col-item-label, .video-row-col-right span.col-item-val {
+    float: none;
+}
+.video-download .video-row-col {
+    padding: 7px 2%;
+    width: 96%;
+}
+.video-download .download-screen-button, .video-download-save .download-screen-button, .download-screen-link
+{
+    padding: 10px 20px;
+}
+#video-download-format
+{
+    display: none;
+}
+.video-row-col-left img {
+    width: 25px;
+    float: left;
+}
+.video-row-col-left span {
+    float: left;
+    padding: 2px 10px;
+}
+.video-row-col-left.ve-youtube span {
+    padding: 0px 10px;
+}
+.video-download-save .video-row-col {
+    padding: 0px 2%;
+    width: 46%;
+    margin: 0px;
+}
+.video-download-content-row.video-download-details {
+    padding: 2.53% 2%;
+}
+.includes-button .video-row-col-left {
+    margin-top: 8px;
+}
+.annotation-row .save-annotation {
+    margin-left: 5px;
+}
+.annotation-row .save-annotation button {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 6px 7px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#video-download-format {
+    padding: 5px;
+    border: none;
+}
+img.copyright-logo-name {
+    width: 75px !important;
+    padding: 8px;
+}
+.video-download-nav-item a {
+    color: #FFF;
+}
+
+#annotations-popup-outer
+{
+    top: 53px;
+    width: 98%;
+    padding: 0.5% 1%;
+}
+div#screenshot-wrapper-bottom 
+{
+    float: left;
+    width: auto;
+    overflow: auto;
+    background: #DEDEDE;
+    text-align: center;
+    width: 100%;
+    min-height: 500px;
+}
+#video-download-logo img {
+    width: 70px;
+}
