@@ -40,7 +40,7 @@
     "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'; script-src-elem 'self' 'unsafe-inline' https://apis.google.com/;"
   },
   "oauth2": {
-    "client_id": "289798756049-kb8flpfrcnsib8kviihvi4ijo50njb2b.apps.googleusercontent.com", 
+    "client_id": "72659317015-nenq7l6cibgn7gc25ps6red950mnlnvj.apps.googleusercontent.com", 
     "scopes": [
       "openid", "email", "profile"
     ]

@@ -957,8 +957,10 @@ div#rotate-box-handle {
     padding: 20px 10px 10px;
     z-index: 1;
     /* ocr */
-    left: 80px;
-    top: 0px;
+    /* left: 80px;
+    top: 0px; */
+    left: 100px;
+    top: -140px;
   }
   .clearGradient{
     position: absolute;
@@ -1187,6 +1189,7 @@ div#annotations-popup-outer-show span {
     align-items: baseline;
     margin-left: 10px;
     box-sizing: border-box;
+    flex-wrap: nowrap;
 }
 #quix-padding-annotation-fields-download  *, #quix-crop-annotation-fields-download  *, #annotations-popup-outer, #annotations-popup-outer *{
     box-sizing: border-box;
