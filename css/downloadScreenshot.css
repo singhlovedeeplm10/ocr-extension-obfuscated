@@ -717,7 +717,8 @@ span.label-reset, span.copy-clipboard {
 /* Download Area */
 .download-mode { display: none;}
 .download-mode .sideBar-li span {
-    color: #FFF;
+    /* color: #FFF; */
+    color: #000;
     padding: 0px 10px 0px 5px;
     float: left;
 }
@@ -1064,7 +1065,7 @@ div#rotate-box-handle {
 }
 
 #screenshot-wrapper-top .sideBar-li-inner{
-    background-color: #2F51B5;
+    /* background-color: #2F51B5; */
 }
 
 
