@@ -695,21 +695,16 @@ div#quix-update-account-inner{
 
 /* ------------------------------------------tag------------------------------------- */
 .tagging-system {
-
     display: flex;
-
     flex-direction: column;
-
     border: 1px solid #ccc;
-
     padding: 5px;
-
     width: 98%;
-
     border-radius: 5px;
-
     position: relative;
-
+    max-height: 70px;
+    overflow: auto;
+    overflow-x: hidden;
 }
 
 
@@ -727,51 +722,33 @@ div#quix-update-account-inner{
 
 
 .tag {
-
     background-color: #000;
-
     color: white;
-
     border-radius: 3px;
-
     padding: 3px 8px;
-
     margin: 3px;
-
     display: flex;
-
     align-items: center;
-
+    word-break: break-all;
+    white-space: pre-wrap;
 }
 
 
 
 .tag span {
-
     margin-right: 0px;
-
     margin-bottom: 0px;
-
     padding: 3px 0px;
-
 }
-
 
 
 .tag button {
-
     background: none;
-
     border: none;
-
     color: white;
-
     font-weight: bold;
-
     cursor: pointer;
-
 }
-
 
 
 #tag-search {
@@ -1236,3 +1213,119 @@ div#add-title-popup-wrapper{
 .highlight-summary-input{
     background-color: red !important;
 }
+
+/* ------------------------------------traditional login */
+.login-share-popup{
+    height: 430px;
+}
+.login-share-heading h3 {
+    width: 100%;
+    margin: 0px auto 0px;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+}
+.login-share-popup .traditional-login-wrapper{
+    margin: 25px 1px 30px;
+}
+.traditional-username-wrapper , .traditional-password-wrapper{
+    margin: 8px auto;
+    width: 80%;
+    position: relative;
+}
+.traditional-username-wrapper input{
+    background-image: '/image';
+}
+.traditional-username-wrapper input, .traditional-password-wrapper input{
+    background-position: 5px;
+    background-repeat: no-repeat;
+    border: 1px solid #000;
+    border-radius: 6px;
+    box-sizing: border-box;
+    height: 30px;
+    padding: 3px 22px 3px 32px;
+    width: 100%;
+}
+.error-traditional-login{
+    color: red;
+    text-align: center;
+}
+.traditional-password-wrapper img.toggle-password{
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    
+}
+/* .traditional-password-wrapper input{
+    background-image: ".";
+
+}
+.traditional-username-wrapper input{
+    background-image: "../assets/images/sms.png";
+
+} */
+.traditional-forgot-password-wrapper{
+    width: 80%;
+    position: relative;
+    height: 20px;
+    margin: 0px auto;
+    cursor: default;
+}
+.traditional-forgot-password-wrapper div{
+    font-size: 10px;
+}
+.traditional-forgot-password-wrapper span{
+    float: right;
+    font-size: 11px;
+    color:  #2f51b5;
+    cursor: pointer;
+}
+.traditional-button-wrapper{
+    margin: 3px auto;
+    width: 35%;
+}
+.traditional-button-wrapper button{
+    padding: 4px 3px;
+    width: 100%;
+    background: #2F51B5;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.login-share-popup .login-devider{
+    position: relative;
+    margin: 5px 0px;
+}
+.login-share-popup .login-devider .more-option{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+    /* padding: 0px 0px 0px; */
+    text-align: center;
+    background-color: #2F51B5;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quix-settings-sign-up-wrapper{
+    margin: 5px 0px 0px;
+    text-align: center;
+    font-weight: 600;
+}
+.quix-settings-sign-up-wrapper .quix-setting-signup{
+    cursor: pointer;
+    color:  #2f51b5;
+}
+
+/* ------------------------END---------------------------------- */
