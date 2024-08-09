@@ -1812,10 +1812,11 @@ span#dimensions-message {
 }
 .OCR_upload-bottom-container.successMessageAfterExtracted{
     color: #047e08;
-    font-size: 15px;
-    padding: 0px 0px 0px 12px !important;
+    padding: 6px 0px 0px 12px !important;
     display: none;
     font-weight: 700;
+    font-size: 12px;
+    text-align: center;
 }
 .OCR_upload-bottom-section-1{
    flex: 0 0 50%;
@@ -1894,7 +1895,8 @@ span#dimensions-message {
 /* mid section */
 .OCR_country-mid-container {
     width: 100% !important;
-    height: 55% !important;
+    height: 55% ;
+    max-height: 55% !important;
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
@@ -2053,4 +2055,209 @@ display: none !important;
     cursor: pointer !important;
     margin: 10px auto 0px !important;
     height: 30px !important;
+}
+
+/*000000000000000000000000000000000000000000000000 login popup 0000000000000000000000000000000000000000000000000000 */
+
+#login-share-popup-wrapper{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999 !important;
+    background-color: #000000db;
+}
+
+.login-share-heading .login-close-popup{
+    position: absolute;
+    width: 30px;
+    right: 5px;
+    top: 3px;
+}
+.login-share-heading .login-popup-logo-icon{
+    width: 50px;
+    display: block;
+    margin: 19px auto 0px;
+}
+.login-share-heading h3{
+    width: 100%;
+    margin: 13px auto;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+}
+.login-share-heading h4{
+    width: 100%;
+    font-size: small;
+    margin: 0px auto 15px auto;
+    text-align: center;
+}
+.login-share-popup{
+    position: relative;
+    width: 400px !important;
+    background-color: white;
+    height: 250px;
+    margin: auto;
+    top: 10%;
+    overflow: overlay;
+    z-index: 99999;
+    padding: 0px 0px 20px 0px;
+    
+}
+.login-button-wrapper{
+    display: flex;
+    gap: 35px;
+    margin: 27px 0 0 0;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px
+}
+.login-button-wrapper img{
+    cursor: pointer;
+}
+.login-facebook img,.login-Twitter img,.login-linkedIn img,.login-google img{
+    width: 36px;
+}
+.library-col {
+    width: 20px;
+    height: 20px;
+}
+@media (max-width: 1200px) {
+    .login-share-heading h3{
+        width: 30%;
+        margin: auto;
+        font-size: 16px;
+        line-height: 25px;
+    
+    }
+    .login-share-heading h4{
+        width: 20%;
+        font-size: 10px;
+        margin: auto
+    }
+}
+.quix-signin-wrapper, .quix-update-account-wrapper{
+    z-index: 99999 !important;
+}
+.login-share-popup{
+    height: 525px !important;
+    width: 30vw !important;
+    color: black;
+}
+.login-share-heading h3 {
+    width: 100%;
+    margin: 0px auto 0px;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+}
+.login-share-popup .traditional-login-wrapper{
+    margin: 25px 1px 30px;
+}
+.traditional-username-wrapper , .traditional-password-wrapper{
+    margin: 8px auto;
+    width: 80%;
+    position: relative;
+}
+.traditional-username-wrapper input{
+    background-image: '/image';
+}
+.traditional-username-wrapper input, .traditional-password-wrapper input{
+    background-position: 5px;
+    background-repeat: no-repeat;
+    border: 1px solid #000;
+    border-radius: 6px;
+    box-sizing: border-box;
+    height: 30px;
+    padding: 3px 22px 3px 32px;
+    width: 100%;
+}
+.error-traditional-login{
+    color: red;
+    text-align: center;
+}
+.traditional-password-wrapper img.toggle-password{
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    
+}
+/* .traditional-password-wrapper input{
+    background-image: ".";
+
+}
+.traditional-username-wrapper input{
+    background-image: "../assets/images/sms.png";
+
+} */
+.traditional-forgot-password-wrapper{
+    width: 80%;
+    position: relative;
+    height: 20px;
+    margin: 0px auto;
+    cursor: default;
+}
+.traditional-forgot-password-wrapper div{
+    font-size: 10px;
+}
+.traditional-forgot-password-wrapper span{
+    float: right;
+    font-size: 11px;
+    color:  #2f51b5;
+    cursor: pointer;
+}
+.traditional-button-wrapper{
+    margin: 3px auto;
+    width: 35%;
+}
+.traditional-button-wrapper button{
+    padding: 4px 3px;
+    width: 100%;
+    background: #2F51B5;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.login-share-popup .login-devider{
+    position: relative;
+    margin: 5px 0px;
+}
+.login-share-popup .login-devider .more-option{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+    /* padding: 0px 0px 0px; */
+    text-align: center;
+    background-color: #2F51B5;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quix-settings-sign-up-wrapper{
+    margin: 5px 0px 0px;
+    text-align: center;
+    font-weight: 600;
+}
+.quix-settings-sign-up-wrapper .quix-setting-signup{
+    cursor: pointer;
+    color:  #2f51b5;
+}
+   
+#OCR_floatable-recorder-tool-container, #OCR_recorder-wait-overlay, #OCR_floatable-recorder-camera-container, #OCR_floatable-recorder-tool, #OCR_selected-screen-capture{
+    z-index: 9999999 !important;
+}
+#OCR_draw-recording-anno{
+    z-index: 9999998 !important;
 }
