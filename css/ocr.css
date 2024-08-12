@@ -168,7 +168,7 @@
           height: fit-content;
           display: flex;
           align-items: center;
-          gap: 4px;
+          gap: 8px;
       }
       .ocrResulEventsChild{
           display: flex;
@@ -356,6 +356,11 @@ gap: 8px;
 border-radius: 7px;
 font-size: 14px;
 }
+.OCR_dropdown-container .dropdown-selected #selected-text{
+    width: 90px;
+    text-align: center;
+    cursor: pointer;
+}
 
 .dropdown-arrow {
 border: solid black;
@@ -405,7 +410,7 @@ width: 20px;
 object-fit: contain;
 }
 .OCR_new-capture-container button{
-  width: 72px;
+  width: 82px;
   border-radius: 7px;
   border: 1px solid #ccc;
   padding: 7px 10px;
@@ -416,4 +421,8 @@ object-fit: contain;
 .uploadOcrData.saved{
     background-color: #2f51b5;
     color: #FFFFFF;
+}
+.uploadOcrData.saved a{
+    color: #FFFFFF !important;
+    text-decoration: none;
 }
