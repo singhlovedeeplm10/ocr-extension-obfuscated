@@ -437,3 +437,6 @@ object-fit: contain;
     color: #FFFFFF !important;
     text-decoration: none;
 }
+#editorQuill{
+    font-weight: normal;
+}

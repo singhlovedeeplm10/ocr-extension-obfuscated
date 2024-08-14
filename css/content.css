@@ -2261,3 +2261,10 @@ display: none !important;
 #OCR_draw-recording-anno{
     z-index: 9999998 !important;
 }
+
+/* annotation========= */
+.OCR_effect-child-options{
+    width: 220px !important;
+}
+
+/* anotation */

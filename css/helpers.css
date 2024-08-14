@@ -158,6 +158,14 @@ span.OCR_success-description,span.OCR_failure-description {
     text-align: center;
     margin-top: 10px;
 }
+.add-title-form{
+    margin-top: 5px;
+}
+.add-title-submit{
+    margin-top: 0px;
+}
+#tag-search{margin-bottom: 2px;}
+.add-title-heading span{margin-top: 1px;}
 .OCR_message-counter{
     margin: 0px;
 }
@@ -777,6 +785,8 @@ div#quix-update-account-inner{
 .dropdown li {
     padding: 5px;
     cursor: pointer;
+    word-break: break-all;
+    white-space: pre-wrap;
 }
 
 .dropdown li:hover {
@@ -821,7 +831,7 @@ label.add-custom-tag-label {
 .add-title-form label {
    display: block;
    text-align: left;
-   padding: 10px 0px 3px;
+   padding: 7px 0px 3px;
    text-transform: capitalize;
    font-weight: bold;
 }

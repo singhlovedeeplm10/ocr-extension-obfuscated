@@ -14,7 +14,7 @@
       ],
      "match_origin_as_fallback": true,
      "css": ["css/content.css"],
-     "js": ["js/libs/misc/quill.min.js","js/libs/misc/jquery.js","js/libs/misc/jquery-ui.min.js" ,"js/helper.js","js/libs/screenGenius/captureScreenshot.js","js/libs/screenGenius/recordAnnotation.js","js/libs/screenGenius/recordScreen.js","js/content.js"],
+     "js": ["js/libs/misc/quill.min.js","js/libs/misc/jquery.js","js/libs/misc/jquery-ui.min.js" ,"js/helper.js","js/libs/screenGenius/captureScreenshot.js","js/libs/screenGenius/recordAnnotation.js","js/libs/screenGenius/recordScreen.js","js/content.js", "js/iframeEvents.js", "js/ocrIframeOptions.js"],
      "all_frames": false
    }
  ],
@@ -50,7 +50,7 @@
   "author": "Quixy",
   "short_name": "Capios",
   "web_accessible_resources": [{
-    "resources": ["/fonts/*","/images/*","/css/*","/js/*"],
+    "resources": ["/fonts/*","/images/*","/css/*","/js/*", "/ocr/*"],
       "matches": [
         "http://*/*",
         "https://*/*"
