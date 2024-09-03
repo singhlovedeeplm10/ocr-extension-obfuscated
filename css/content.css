@@ -1,3 +1,26 @@
+:root {
+    --card-background: #ffffff;
+    --card-text-color: #000000;
+    --card-border-color: #dddddd;
+  }
+  .OCR_OutermostDiv {
+    background-color: var(--card-background) !important;
+    color: var(--card-text-color) !important;
+    border: 1px solid var(--card-border-color) !important;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --card-background: #ffffff;
+      --card-text-color: #000000;
+      --card-border-color: #dddddd;
+    }
+    /* .OCR_OutermostDiv, .OCR_OutermostDiv *{
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border: 1px solid #dddddd !important;
+    } */
+  }
 #download-overlay-inner *, #OCR_floatable-recorder-tool-container *,  #OCR_floatable-recorder-camera-container *, .OCR_screen-cap-content *, #video-outer *{box-sizing: border-box !important; -webkit-box-sizing: border-box !important;} 
 #download-overlay-inner img{display: inline-block !important;vertical-align: unset !important;}
 /* #download-overlay-inner a, #download-overlay-inner body, #download-overlay-inner button, #download-overlay-inner code, #download-overlay-inner div, #download-overlay-inner input, #download-overlay-inner kbd, #download-overlay-inner label, #download-overlay-inner pre, #download-overlay-inner samp, #download-overlay-inner select, #download-overlay-inner span
@@ -302,6 +325,9 @@ button.close-link-share:hover, button.close-email-share:hover, button.OCR_close-
     font-size: 14px;
     line-height: 16px;
     height: auto;
+}
+.OCR_message-counter{
+    margin: 0px !important;
 }
 #OCR_share-feedback-form textarea {
     height: 100px;
@@ -1669,6 +1695,12 @@ span#dimensions-message {
    /* font-family: Arial, Helvetica, sans-serif !important; */
    font-family: Segoe UI, Tahoma, sans-serif !important;
 }
+#OCR_overlay-upgrade h5#OCR_image-name  {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 250px;
+    text-overflow: ellipsis;
+}
 /* top section */
 .OCR_upload-outer-div{
     box-sizing: border-box !important;
@@ -1944,6 +1976,7 @@ span#dimensions-message {
     gap: 15px !important;
     padding: 0px 12px !important;
     font-size: 18px !important;
+    cursor: pointer;
 }
 .OCR_country-dropdown-list{
     width: 90% !important;
@@ -1964,6 +1997,12 @@ span#dimensions-message {
 .OCR_countryDropdown span{
     flex: 1 1;
     text-align: justify ;
+}
+
+.OCR_countryDropdown img, .OCR_country-dropdown-list img{
+    width: 20px !important;
+    aspect-ratio: auto 20 / 15 !important;
+    height: 15px !important;
 }
 .OCR_dropdown-item{
     display: flex !important;
@@ -2018,6 +2057,7 @@ display: none !important;
     padding: 0px !important;
     margin: 0px !important;
     font-weight: 400 !important;
+    cursor: pointer;
 }
 #OCR_countryCancelbutton{
     background-color: white !important;
@@ -2030,6 +2070,7 @@ display: none !important;
     padding: 0px !important;
     margin: 0px !important;
     font-weight: 400 !important;
+    cursor: pointer;
 }
 
 /* .OCR_country-dropdown-list.active {
@@ -2038,7 +2079,7 @@ display: none !important;
     display: unset !important;
 } */
 
-#OCR_success-popup-wrapper .okAfterExtract{
+#OCR_failure-popup-wrapper .okAfterExtract{
     width: 30% !important;
     padding: 6px 10px !important;
     background-color: #2F51B5 !important;
@@ -2046,14 +2087,14 @@ display: none !important;
     border: none !important;
     border-radius: 7px !important;
     box-shadow: 0px 0px 2px #2F51B5 !important;
-    padding: 2px 12px !important;
+    padding: 2px 10px !important;
     position: relative !important;
     left: 50% !important;
     top: 0px !important;
     transform: translate(-50%, 0px) !important;
     text-transform: uppercase !important;
     cursor: pointer !important;
-    margin: 10px auto 0px !important;
+    margin: 5px auto 0px !important;
     height: 30px !important;
 }
 
@@ -2123,7 +2164,7 @@ display: none !important;
     width: 20px;
     height: 20px;
 }
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     .login-share-heading h3{
         width: 30%;
         margin: auto;
@@ -2136,13 +2177,13 @@ display: none !important;
         font-size: 10px;
         margin: auto
     }
-}
+} */
 .quix-signin-wrapper, .quix-update-account-wrapper{
     z-index: 99999 !important;
 }
 .login-share-popup{
-    height: 525px !important;
-    width: 30vw !important;
+    height: 480px !important;
+    /* height: 525px !important; */
     color: black;
 }
 .login-share-heading h3 {
@@ -2263,8 +2304,20 @@ display: none !important;
 }
 
 /* annotation========= */
-.OCR_effect-child-options{
+.OCR_effect-child-options-anno{
     width: 220px !important;
 }
 
+#OCR_success-popup-wrapper, #OCR_failure-popup-wrapper {
+    z-index: 2147483648 !important;
+}
+
+
 /* anotation */
+
+@media (prefers-color-scheme: dark) {
+    .OCR_mid-name {
+        /* background-color: #000000; */
+        color: #ffffff !important;
+    }
+}

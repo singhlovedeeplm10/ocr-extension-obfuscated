@@ -1,124 +1,140 @@
-<html><head>
+<html>
+
+<head>
     <link href="../css/quill.snow.css" rel="stylesheet">
     <link href="../css/ocr.css" rel="stylesheet">
-</head><body>
-    <div id="quix-ocr-capture-wrapper" class="parent quix-ocr-capture-wrapper" style="display: block;">
-            <div class="ocrParentContainer firstPage">
-                  <div id="quix-ocr-capture-wrapper" class="parent" style="display: block;">
-                        
-    <div class="ocrTop">
-        <div class="ocrTopInner">
-            <div class="ocrTopSection">
-                
-                <div class="ocrTopSection">
-                    
-                        <img src="../images/iframeIcons/ocr-icon.png" alt="">
-                        <span class="Ocr-name">OCR Capture</span>
-                    
+</head>
+
+<body>
+    <div id="quix-ocr-capture-wrapper" class="parent quix-ocr-capture-wrapper quix-change-bg-color"
+        style="display: block;">
+        <div class="ocrParentContainer firstPage">
+            <div id="quix-ocr-capture-wrapper" class="parent quix-change-bg-color" style="display: block;">
+
+                <div class="ocrTop">
+                    <div class="ocrTopInner">
+                        <div class="ocrTopSection">
+
+                            <div class="ocrTopSection">
+
+                                <img src="../images/iframeIcons/ocr-icon.png" alt="">
+                                <span class="Ocr-name">OCR Capture</span>
+
+                            </div>
+                        </div>
+                        <div class="OCR_dropdown-container" id="dropdown">
+                            <div class="dropdown-selected" id="3">
+                                <img id="selected-icon" src="../images/iframeIcons/ocr-active-select-area.png"
+                                    alt="icon">
+                                <span id="selected-text">Select Area</span>
+                                <div class="dropdown-arrow"></div>
+                            </div>
+                            <div class="dropdown-options">
+                                <div class="dropdown-option"
+                                    data-icon="../images/iframeIcons/ocr-active-full-screen.png" id="1"
+                                    data-text="Full page" title="Full Page">
+                                    <img src="../images/iframeIcons/ocr-entire-screen.png" alt="icon"> Full page
+                                </div>
+                                <div class="dropdown-option"
+                                    data-icon="../images/iframeIcons/ocr-active-select-area.png" id="3"
+                                    data-text="Select Area" title="Select Area">
+                                    <img src="../images/iframeIcons/ocr-select-area.png" alt="icon"> Select Area
+                                </div>
+                                <div class="dropdown-option" data-icon="../images/iframeIcons/ocr-active-upload-img.png"
+                                    id="4" data-text="Upload File" title="Upload File">
+                                    <img src="../images/iframeIcons/ocr-upload-img.png" alt="icon"> Upload File
+                                </div>
+                            </div>
+                        </div>
+                        <div class="OCR_new-capture-container">
+                            <button>Recapture</button>
+                        </div>
+                        <div class="ocrTopSection closeIframe" style="cursor: pointer;">
+                            <img src="../images/iframeIcons/ocr-close-icon.png" alt="" title="Extract New">
+                        </div>
+                    </div>
                 </div>
+
+
+                <div class="ocrMid">
+                    <div class="ocrMidInner">
+                        <div class="ocrMidInnerSection ocrMidInnerSectionPart">
+                            <img class="ocrCapturedImage" alt="" style="width: 25px;" src="../images/light-loader.gif">
+                        </div>
+                        <div class="ocrMidInnerSection ocrMidInnerSection1">
+                            <span class="ocrText">OCR Capture Result</span>
+                            <div class="ocrResulContainer">
+                                <div class="ocrResulText" style="display: block;">Sorry, no text available</div>
+                                <div class="ocrResulEvents">
+                                    <div class="ocrResulEventsChild">
+                                        <div title="Edit Text">
+                                            <img src="../images/iframeIcons/ocr-edit.png" alt="" title="Edit"
+                                                class="editText">
+                                        </div>
+                                        <div class="flex">
+                                            <img src="../images/iframeIcons/ocr-copy.png" alt="" title="Copy Text"
+                                                class="copyText">
+                                            <p class="copyMessage">Content copied!</p>
+                                        </div>
+                                    </div>
+                                    <div style="visibility: hidden;">
+                                        <img src="../images/iframeIcons/ocr-delete.png" alt="" title="Delete"
+                                            class="deleteText">
+                                    </div>
+                                </div>
+                                <div class="editorContentParent" style="display: none;">
+                                    <div id="editorQuill"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ocrFooter">
+                    <div class="ocrFooterInner">
+                        <div class="searchResult">
+                            <img src="../images/iframeIcons/ocr-search-icon.png" alt="" title="Search Text">
+                        </div>
+                        <div class="translateResult" style="opacity: 0.5;" title="Coming Soon">
+                            <img src="../images/iframeIcons/ocr-translate-icon.png" alt="">
+                        </div>
+                        <div class="textSpeechResult" style="opacity: 0.5;" title="Coming Soon">
+                            <img src="../images/iframeIcons/ocr-volume-icon.png" alt="">
+                        </div>
+                        <div class="aiResult" style="opacity: 0.5;" title="Coming Soon">
+                            <img src="../images/iframeIcons/ocr-ai-icon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="ocrFooterInner2">
+                        <div id="ocrFooterInner2first" class="uploadOcrData" title="Save">Save</div>
+                    </div>
+                </div>
+                <div class="ocrFooter ocrFooterEdit" style="display: none;">
+                    <div class="ocrFooterInner2">
+                        <div id="ocrFooterInner2first" class="cancelEdit" style="width: 60px;">Cancel</div>
+                    </div>
+                    <div class="ocrFooterInner2">
+                        <div id="ocrFooterInner2first" class="saveEdit" style="width: 60px;">Save</div>
+                    </div>
+                </div>
+
             </div>
-             <div class="OCR_dropdown-container" id="dropdown">
-                    <div class="dropdown-selected" id="3">
-                    <img id="selected-icon" src="../images/iframeIcons/ocr-active-select-area.png" alt="icon">
-                    <span id="selected-text">Select Area</span>
-                    <div class="dropdown-arrow"></div>
-                </div>
-                 <div class="dropdown-options">
-                    <div class="dropdown-option" data-icon="../images/iframeIcons/ocr-active-full-screen.png" id="1" data-text="Full page">
-                        <img src="../images/iframeIcons/ocr-entire-screen.png" alt="icon"> Full page
-                    </div>
-                    <div class="dropdown-option" data-icon="../images/iframeIcons/ocr-active-select-area.png" id="3" data-text="Select Area">
-                        <img src="../images/iframeIcons/ocr-select-area.png" alt="icon"> Select Area
-                    </div>
-                    <div class="dropdown-option" data-icon="../images/iframeIcons/ocr-active-upload-img.png" id="4" data-text="Upload File">
-                        <img src="../images/iframeIcons/ocr-upload-img.png" alt="icon"> Upload File
-                    </div>
-                </div>
-                </div>
-                <div class="OCR_new-capture-container">
-                   <button>Recapture</button>
-               </div>
-            <div class="ocrTopSection closeIframe" style="cursor: pointer;">
-                <img src="../images/iframeIcons/ocr-close-icon.png" alt="" title="Extract New">
+        </div>
+        <div id="quix-popup-loader">
+            <div class="quix-popup-loader-inner">
+                <div id="quix-popup-overlay" class="quix-popup-overlay"></div>
+                <img src="../images/light-loader.gif" alt="">
             </div>
         </div>
     </div>
-
-                        
-        <div class="ocrMid">
-            <div class="ocrMidInner">
-                <div class="ocrMidInnerSection ocrMidInnerSectionPart">
-                    <img class="ocrCapturedImage" alt="" src="../images/ocr-no-image.jpg">
-                </div>
-                <div class="ocrMidInnerSection ocrMidInnerSection1">
-                    <span class="ocrText">OCR Capture Result</span>
-                    <div class="ocrResulContainer">
-                        <div class="ocrResulText" style="display: block;">Sorry, no text available</div>
-                        <div class="ocrResulEvents" >
-                            <div class="ocrResulEventsChild">
-                                <div title="Edit Text">
-                                    <img src="../images/iframeIcons/ocr-edit.png" alt="" title="Edit" class="editText">
-                                </div>
-                                <div class="flex">
-                                    <img src="../images/iframeIcons/ocr-copy.png" alt="" title="Copy Text" class="copyText">
-                                    <p class="copyMessage">Content copied!</p>
-                                </div>
-                            </div>
-                            <div style="visibility: hidden;">
-                                <img src="../images/iframeIcons/ocr-delete.png" alt="" title="Delete" class="deleteText">
-                            </div>
-                        </div>
-                        <div class="editorContentParent" style="display: none;">
-                        <div id="editorQuill"></div>
-                        </div>
-                    </div>
-                     
-                </div>
-            </div>
-        </div>
-    
-                        
-        <div class="ocrFooter">
-            <div class="ocrFooterInner">
-                <div class="searchResult">
-                    <img src="../images/iframeIcons/ocr-search-icon.png" alt="" title="Search Text">
-                </div>
-                <div class="translateResult" style="opacity: 0.5;" title="Coming Soon">
-                    <img src="../images/iframeIcons/ocr-translate-icon.png" alt="">
-                </div>
-                <div class="textSpeechResult" style="opacity: 0.5;" title="Coming Soon">
-                    <img src="../images/iframeIcons/ocr-volume-icon.png" alt="">
-                </div>
-                <div class="aiResult" style="opacity: 0.5;" title="Coming Soon">
-                    <img src="../images/iframeIcons/ocr-ai-icon.png" alt="">
-                </div>
-            </div>
-            <div class="ocrFooterInner2">
-                <div id="ocrFooterInner2first" class="uploadOcrData" title="Save">Save</div>
-            </div>
-        </div>
-        <div class="ocrFooter ocrFooterEdit" style="display: none;">
-            <div class="ocrFooterInner2">
-                   <div id="ocrFooterInner2first" class="cancelEdit" style="width: 60px;">Cancel</div>
-            </div>
-             <div class="ocrFooterInner2">
-                   <div id="ocrFooterInner2first" class="saveEdit" style="width: 60px;">Save</div>
-            </div>
-        </div>
-    
-                    </div>
-            </div>
-            <div id="quix-popup-loader">
-                <div class="quix-popup-loader-inner">
-                    <div id="quix-popup-overlay" class="quix-popup-overlay"></div>
-                    <img src="../images/light-loader.gif" alt="">
-                </div>
-            </div>
-        </div>
-        <script type="text/javascript" src="../js/libs/misc/jquery.js"></script>
-        <script type="text/javascript" src="../js/libs/misc/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/libs/misc/jquery.js"></script>
+    <script type="text/javascript" src="../js/libs/misc/jquery-ui.min.js"></script>
     <script src="../js/libs/misc/quill.min.js" type="text/javascript"></script>
     <script src="../js/helper.js" type="text/javascript"></script>
     <script src="../js/iframeEvents.js" type="text/javascript"></script>
     <script src="../js/ocrIframeOptions.js" type="text/javascript"></script>
-    </body></html>
+</body>
+
+</html>
